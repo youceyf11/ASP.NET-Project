@@ -1,0 +1,32 @@
+2025-01-01 15:22:04.031 GMT [4713] LOG:  starting PostgreSQL 14.15 (Homebrew) on aarch64-apple-darwin23.6.0, compiled by Apple clang version 16.0.0 (clang-1600.0.26.4), 64-bit
+2025-01-01 15:22:04.032 GMT [4713] LOG:  listening on IPv6 address "::1", port 5432
+2025-01-01 15:22:04.032 GMT [4713] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-01-01 15:22:04.033 GMT [4713] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-01-01 15:22:04.036 GMT [4714] LOG:  database system was shut down at 2025-01-01 15:21:50 GMT
+2025-01-01 15:22:04.039 GMT [4713] LOG:  database system is ready to accept connections
+2025-01-01 15:24:21.350 GMT [6156] FATAL:  role "postgres" does not exist
+2025-01-01 15:24:51.883 GMT [4713] LOG:  received fast shutdown request
+2025-01-01 15:24:51.883 GMT [4713] LOG:  aborting any active transactions
+2025-01-01 15:24:51.885 GMT [4713] LOG:  background worker "logical replication launcher" (PID 4720) exited with exit code 1
+2025-01-01 15:24:51.886 GMT [4715] LOG:  shutting down
+2025-01-01 15:24:51.893 GMT [4713] LOG:  database system is shut down
+2025-01-01 15:29:55.482 GMT [10265] LOG:  starting PostgreSQL 14.15 (Homebrew) on aarch64-apple-darwin23.6.0, compiled by Apple clang version 16.0.0 (clang-1600.0.26.4), 64-bit
+2025-01-01 15:29:55.483 GMT [10265] LOG:  listening on IPv6 address "::1", port 5432
+2025-01-01 15:29:55.483 GMT [10265] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-01-01 15:29:55.483 GMT [10265] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-01-01 15:29:55.486 GMT [10266] LOG:  database system was shut down at 2025-01-01 15:29:03 GMT
+2025-01-01 15:29:55.489 GMT [10265] LOG:  database system is ready to accept connections
+2025-01-01 15:32:59.110 GMT [12159] FATAL:  role "Admin" does not exist
+2025-01-01 15:35:09.692 GMT [13969] FATAL:  database "youssefouriniche" does not exist
+2025-01-01 15:35:24.334 GMT [14085] FATAL:  role "postgres" does not exist
+2025-01-01 15:47:32.240 GMT [22880] FATAL:  role "Admin" does not exist
+2025-01-01 15:50:54.412 GMT [24923] FATAL:  database "youssefouriniche" does not exist
+2025-01-01 15:51:24.629 GMT [25391] ERROR:  role "admin" already exists
+2025-01-01 15:51:24.629 GMT [25391] STATEMENT:  CREATE ROLE Admin WITH LOGIN PASSWORD '123456789';
+2025-01-01 15:52:21.199 GMT [26082] FATAL:  database "YoussefDB" does not exist
+2025-01-01 15:52:21.207 GMT [26083] FATAL:  database "YoussefDB" does not exist
+2025-01-01 15:52:21.210 GMT [26084] FATAL:  database "YoussefDB" does not exist
+2025-01-01 21:21:18.982 GMT [10265] LOG:  received smart shutdown request
+2025-01-01 21:21:18.987 GMT [10265] LOG:  background worker "logical replication launcher" (PID 10272) exited with exit code 1
+2025-01-01 21:21:18.987 GMT [10267] LOG:  shutting down
+2025-01-01 21:21:19.017 GMT [10265] LOG:  database system is shut down
