@@ -14,13 +14,17 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDbContext<YoussefDbContext>(options =>
     options.UseNpgsql(connectionString));
 
-// Use either AddIdentity or AddDefaultIdentity, but not both
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<YoussefDbContext>();
+builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<YoussefDbContext>();
+builder.Services.AddControllersWithViews();
 
-// builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
-//     .AddRoles<IdentityRole>() // Add this line to enable roles
-//     .AddEntityFrameworkStores<YoussefDbContext>();
+builder.Services.AddMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout=TimeSpan.FromMinutes(30);
+});
 
 var app = builder.Build();
 

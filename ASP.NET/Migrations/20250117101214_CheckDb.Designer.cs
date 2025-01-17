@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using YourNamespace.Data;
@@ -11,9 +12,11 @@ using YourNamespace.Data;
 namespace ASP.NET.Migrations
 {
     [DbContext(typeof(YoussefDbContext))]
-    partial class YoussefDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250117101214_CheckDb")]
+    partial class CheckDb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -212,7 +215,7 @@ namespace ASP.NET.Migrations
                             ProductId = 1,
                             CategoryId = 2,
                             Description = "A delicious beef taco",
-                            ImageUrl = "beeftacos.jpg",
+                            ImageUrl = "/wwwroot/Images/",
                             Name = "Beef Taco",
                             Price = 2.99m,
                             Stock = 100
@@ -222,7 +225,7 @@ namespace ASP.NET.Migrations
                             ProductId = 2,
                             CategoryId = 2,
                             Description = "A delicious Chicken taco",
-                            ImageUrl = "chickentacos.jpg",
+                            ImageUrl = "/wwwroot/Images/",
                             Name = "Chicken Taco",
                             Price = 3.99m,
                             Stock = 101
@@ -232,7 +235,7 @@ namespace ASP.NET.Migrations
                             ProductId = 3,
                             CategoryId = 2,
                             Description = "A delicious Fish taco",
-                            ImageUrl = "fishtacos.jpg",
+                            ImageUrl = "/wwwroot/Images/",
                             Name = "Fish Taco",
                             Price = 1.99m,
                             Stock = 200
